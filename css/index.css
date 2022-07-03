@@ -30,8 +30,11 @@ header{
   justify-content: center;
 }
 
+.navbar{
+ background-color: grey;
+}
+
 .menu{
-  background-color: grey;
   list-style-type: none;
   display: flex;
   flex-direction: row;
@@ -45,6 +48,7 @@ li{
 }
 
 main{
+  margin-top: 10px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -81,13 +85,24 @@ main{
     width: 80%;
   }
 
+  .navbar{
+    display: flex;
+    justify-content: end;
+    padding: 5px;
+  }
+
+  .menu{
+    display: none;
+  }
+
+  .hamburger{
+    color: white;
+    display: contents;
+  }
+
 }
 
 @media (max-width: 768px){
-
-  body{
-    background-color: aqua;
-  }
 
   header{
     display: flex;
@@ -109,6 +124,25 @@ main{
   .product{
     width: 80%;
     text-align: center;
+  }
+
+  .product{
+    width: 80%;
+  }
+
+  .navbar{
+    display: flex;
+    justify-content: end;
+    padding: 5px;
+  }
+
+  .menu{
+    display: none;
+  }
+
+  .hamburger{
+    color: white;
+    display: contents;
   }
 
 }
