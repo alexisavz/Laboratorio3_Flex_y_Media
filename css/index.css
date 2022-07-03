@@ -11,3 +11,104 @@ body {
 .logo > img {
   width: 50px;
 }
+
+.hamburger{
+  display: none;
+}
+
+header{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.logo{
+  width: 33%;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+
+.menu{
+  background-color: grey;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 20px 0px 20px 0px;
+}
+
+li{
+  color: white;
+  margin-right: 50px;
+}
+
+main{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.product{
+  border: 1px solid grey;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  align-items: center;
+}
+
+.social_icon{
+  list-style-type: none;
+  color: black;
+}
+
+.social{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+
+  main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product{
+    width: 80%;
+  }
+
+}
+
+@media (max-width: 768px){
+
+  body{
+    background-color: aqua;
+  }
+
+  header{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .logo{
+    margin-top: 25px;
+  }
+
+  main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product{
+    width: 80%;
+    text-align: center;
+  }
+
+}
